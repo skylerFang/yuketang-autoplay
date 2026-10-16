@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "雨课堂目录连播助手",
+  "version": "0.5.0",
+  "description": "按左侧目录连播，并可尝试恢复切换标签页后的自动暂停。",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.yuketang.cn/ai-workspace/lms-graph/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
